@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .container{
+            display: flex;
+            justify-content:space-around;
+            border: 1px solid black;
+            height: 600px;
+            align-items:  center;
+        }
+        .flex-box{
+          height: 200px;
+            width: 200px;
+            border: 2px solid black;
+        }
+        .box-1{
+            flex-grow: 2;
+            order: 1;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Flexible box trying by using css proprerty</h1>
+    <div class="container">
+        <div id="box-1" class="flex-box">
+            <h1>BOX-1</h1>
+        </div>
+        <div class="flex-box">
+            <h1>BOX-2</h1>
+        </div>
+        <div class="flex-box">
+            <h1>BOX-3</h1>
+        </div>
+    </div>
+</body>
+</html>
